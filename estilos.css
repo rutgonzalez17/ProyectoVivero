@@ -47,10 +47,11 @@ header ul{
     cursor: pointer;
 }
 
+
 /*-----NOSOTROS-------------------*/
 
 .fondo_nosotros{
-    background: rgb(134, 227, 134);
+    /*background: rgb(134, 227, 134);*/
     margin: 20px 12px;
     padding: 25px;
 }
@@ -78,7 +79,24 @@ section img{
     height: 25%;
     padding: 10px 10px;
 }
+.gradiente{
+    background-image: linear-gradient(rgb(134, 227, 134), white);
+}
 
+.animacion_fotos{
+    animation-name: fotos;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fotos {
+    from{
+        transform: translateX(1000px) scale(2, 2);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 /*----------------------------------TIENDA----------------------------------------------------------*/
 .productos{
     margin: 25px 12px;
