@@ -1,0 +1,165 @@
+/*ASI COMENTO EN ESTILOS*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------------INDEX--------------------------------------------*/
+.menu{
+    background: rgb(172, 240, 172);
+    padding: 30px;
+}
+
+nav img{
+    width: 100%;
+}
+ul li{
+    width: 120px;
+    height: 30px;
+    padding: 25px 10px;
+    background-color: rgb(18, 91, 18);
+    border: 2px  solid white;
+}
+
+.flexbox-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+}
+.bar-btn{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*-----NOSOTROS-------------------*/
+
+.fondo_nosotros{
+    background: rgb(134, 227, 134);
+    margin: 20px 12px;
+    padding: 25px;
+}
+
+section p {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+section h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.contenido_nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+section img{
+    width: 25%;
+    height: 25%;
+    padding: 10px 10px;
+}
+
+/*----------------------------------TIENDA----------------------------------------------------------*/
+.productos{
+    margin: 25px 12px;
+}
+/*menu tienda*/
+span{
+    /*width: 100%;
+    height: 100%;*/
+    padding: 10px 10px ;
+    background: rgb(166, 232, 166);
+    border-radius:  10px;
+    color: black;
+    justify-content: center;
+    margin: 5px;
+}
+.menu-tienda{
+    padding: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tienda-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+/*----------------------------------------CONTACTO-------------------------------------*/
+form{
+    width: 500px;
+    margin: auto;
+    padding: 10 px 30px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: rgb(189, 243, 221);
+    box-sizing: border-box;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: black;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 15px;
+}
+textarea{
+    margin: 12px;
+    border: 3px solid black;
+}
+
+label{
+    margin: 3px;
+}
+.enviar{
+    background: #50CA41;
+    color: white;
+    padding: 20px;
+}
+/*-------------------------------------FOOTER--------------------------------------------*/
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+}
+.uno{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ol li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer{
+    background: rgb(12, 12, 12);
+}
