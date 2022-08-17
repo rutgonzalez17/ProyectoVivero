@@ -4,8 +4,10 @@
         <title>VIVERO</title>
         <link rel="stylesheet" href="estilos.css">
         <link rel="shortcut icon" href="./imagenes/favicon.jpg">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     </head>
     <body>
+        <script src="bootstrap/js/bootstrap.js"></script>
         <header class="header">
             <nav class="menu">
                 <div>
@@ -35,39 +37,43 @@
                     suscipit?</p>
                 </article>
             </section>
-            <section class="animacion_fotos">
-                <div class="contenido_nosotros">
-                    <img src="imagenes/vivero2.jpg" alt="">
-                    <img src="imagenes/vivero 3.jpg" alt="">
-                    <img src="imagenes/vivero4.jpg" alt="">
+            <section class="container">
+                <div class="row">
+                    <article class="col">
+                        <img src="imagenes/vivero2.jpg" alt="">
+                    </article>
+                    <article class="col">
+                        <img src="imagenes/vivero 3.jpg" alt="">
+                    </article>
+                    <article class="col">
+                        <img src="imagenes/vivero4.jpg" alt="">
+                    </article>
                 </div>
             </section>
         </main>
-        <div class="contenido">
-            <footer class="footer">
-                <div class="grid-footer">
-                    <div class="uno">
+        <section class="footer" class="container">
+                <div class="row">
+                    <article class="col">
                         <h3>Nosotros</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Amet adipisci id soluta accusantium. Harum, sed blanditiis 
                             corrupti dicta quisquam sint vero animi, dolores tenetur et 
                             saepe sunt neque, delectus eius!</p>
-                    </div>
-                    <div class="uno">
+                    </article>
+                    <article class="col">
                         <h3>Productos</h3>
                         <ol class="productos-footer">
                             <li><a href="">Interior</a></li>
                             <li><a href="">Exterior</a></li>
                             <li><a href="">Temporada</a></li>
                         </ol>
-                    </div>
-                    <div class="uno">
+                    </article>
+                    <article class="col">
                         <h3>Redes</h3>
                         <a href="https://es-la.facebook.com/">facebook</a>
                         <a href="https://www.instagram.com/">Instragram</a>
-                    </div>
+                    </article>
                 </div>
-            </footer>
-        </div>
+        </section>
     </body>
 </html>
