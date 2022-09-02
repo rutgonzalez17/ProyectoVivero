@@ -5,30 +5,34 @@
         <link rel="stylesheet" href="estilos.css">
         <link rel="shortcut icon" href="./imagenes/favicon.jpg">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     <body>
         <script src="bootstrap/js/bootstrap.js"></script>
-        <header class="header">
-            <nav class="menu">
-                <div>
-                    <h1>LOGO</h1>
-                </div>
-                <div>
-                    <ul class="flexbox-menu">
+        <header>
+            <div class="container">
+                <nav class="nav_checkbox">
+                    <h2 class="logo">VI-VERO</h2>
+                    <input type="checkbox" id="tab-nav" class="tab-nav">
+                    <label for="tab-nav" class="label">
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                    </label>
+                    <ul class="content_nav">
                         <li><a href="index.html">INICIO</a></li>
                         <li><a href="#nosotros">NOSOTROS</a></li>
                         <li><a href="tienda.html">TIENDA</a></li>
-                        <li><a href="servicios.html">SERVICIOS</a></li>
+                        <li><a href="#Servicios">SERVICIOS</a></li>
                         <li><a href="contacto.html">CONTACTO</a></li>
                     </ul>
-                </div>
-            </nav>
-            <nav>
-                <img src="imagenes/vivero1.jpg" alt="">
-            </nav>
+                </nav>
+            </div>
         </header>
+        <section class="content_section">
+    
+        </section>
         <main>
-            
             <section class="gradiente">
                 <article class="fondo_nosotros">
                     <h1  id="nosotros">NOSOTROS</h1>
@@ -51,27 +55,62 @@
                 </div>
             </section>
         </main>
+        <div class="title-cards">
+            <h2 id="Servicios">Nuestros Servicios</h2>
+        </div>
+    <div class="container-card">
+    <div class="card">
+        <figure>
+            <img src="imagenes/paisajismo.webp">
+        </figure>
+        <div class="contenido-card">
+            <h3>Paisajismo y Diseño</h3>
+            <p>Diseñamos y realizamor todo tipo de espacio verde con la capacidad técnica y de ejecución en todas las áreas requeridas.</p>
+            <a href="#">Leer Màs</a>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="imagenes/huerta.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>Huertas</h3>
+            <p>Realizamos huertas acorde a los espacios y posibilidades que brinda el lugar. Acompañamos su cuidado</p>
+            <a href="#">Leer Màs</a>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="imagenes/matenimiento.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>Mantenimiento</h3>
+            <p>Realizamos servicios personalizamos para mantener el jardin de tus sueños</p>
+            <a href="#">Leer Màs</a>
+        </div>
+    </div>
+    </div>
+        <!--FOOTER----------------------------------------------->
         <section class="footer" class="container">
                 <div class="row">
                     <article class="col">
-                        <h3>Nosotros</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Amet adipisci id soluta accusantium. Harum, sed blanditiis 
-                            corrupti dicta quisquam sint vero animi, dolores tenetur et 
-                            saepe sunt neque, delectus eius!</p>
+                        <h3 class="texto_footer">VI-VERO</h3>
                     </article>
                     <article class="col">
                         <h3>Productos</h3>
                         <ol class="productos-footer">
-                            <li><a href="">Interior</a></li>
-                            <li><a href="">Exterior</a></li>
-                            <li><a href="">Temporada</a></li>
+                            <li><a href="tienda.html">Interior</a></li>
+                            <li><a href="tienda.html">Exterior</a></li>
+                            <li><a href="tienda.html">Temporada</a></li>
                         </ol>
                     </article>
                     <article class="col">
                         <h3>Redes</h3>
-                        <a href="https://es-la.facebook.com/">facebook</a>
-                        <a href="https://www.instagram.com/">Instragram</a>
+                        <nav class="redes">
+                            <a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+                        </nav>
                     </article>
                 </div>
         </section>

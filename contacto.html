@@ -3,24 +3,57 @@
     <head>
         <title>VIVERO</title>
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="css/contacto.css">
         <link rel="shortcut icon" href="./imagenes/favicon.jpg">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     <body>
-        <header class="header">
-            <nav class="menu">
-                <h1>
-                    LOGO
-                </h1>
-                <ul class="flexbox-menu">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="tienda.html">TIENDA</a></li>
-                    <li><a href="servicios.html">SERVICIOS</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
+        <header>
+            <div class="container">
+                <nav class="nav_checkbox">
+                    <h2 class="logo">VI-VERO</h2>
+                    <input type="checkbox" id="tab-nav" class="tab-nav">
+                    <label for="tab-nav" class="label">
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                    </label>
+                    <ul class="content_nav">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="tienda.html">TIENDA</a></li>
+                        <li><a href="#Servicios">SERVICIOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <form action="">
+        <section id="logearse">
+            <div class="container">
+              <h2 class="display-2">Dejanos tu comentario</h2>
+              <p class="large">No te olvides de seguirnos en nuestras redes</p>
+              <div class="formulario">
+                <h4>VI-VERO</h4>
+                <form action="">
+                  <div class="form-group">
+                    <label for="name" title="Nombre">Nombre</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Apellido</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="Dejanos tu comentario">Dejanos tu comentario</label>
+                    <textarea class="form-control"name="Dejanos tu comentario"cols="30" rows="10"></textarea><br>
+                  </div>
+                  <button class="btn btn-dark">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        <!--<form action="">
             <input type="text" name="Nombre" placeholder="Nombre">
             <input type="text" name="Apellido" placeholder="Apellido"><br>
             <label for="Dejanos tu comentario">Dejanos tu comentario</label><br>
@@ -30,32 +63,29 @@
         <div>
             <h2>ENCONTRANOS EN...</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7304861847224!2d-58.45925848591399!3d-34.6109760804576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1b6319de2d%3A0xe42dcbf8bdf86c43!2sNicasio%20Oro%C3%B1o%201222%2C%20C1416BZD%20CABA!5e0!3m2!1ses!2sar!4v1657845809037!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contenido">
-            <footer class="footer">
-                <div class="grid-footer">
-                    <div class="uno">
-                        <h3>Nosotros</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Amet adipisci id soluta accusantium. Harum, sed blanditiis 
-                            corrupti dicta quisquam sint vero animi, dolores tenetur et 
-                            saepe sunt neque, delectus eius!</p>
-                    </div>
-                    <div class="uno">
-                        <h3>Productos</h3>
-                        <ol class="productos-footer">
-                            <li><a href="">Interior</a></li>
-                            <li><a href="">Exterior</a></li>
-                            <li><a href="">Temporada</a></li>
-                        </ol>
-                    </div>
-                    <div class="uno">
-                        <h3>Redes</h3>
-                        <a href="https://es-la.facebook.com/">facebook</a>
-                        <a href="https://www.instagram.com/">Instragram</a>
-                    </div>
-                </div>
-            </footer>
-        </div>
+        </div>-->
+        <section class="footer" class="container">
+            <div class="row">
+                <article class="col">
+                    <h3 class="texto_footer">VI-VERO</h3>
+                </article>
+                <article class="col">
+                    <h3>Productos</h3>
+                    <ol class="productos-footer">
+                        <li><a href="tienda.html">Interior</a></li>
+                        <li><a href="tienda.html">Exterior</a></li>
+                        <li><a href="tienda.html">Temporada</a></li>
+                    </ol>
+                </article>
+                <article class="col">
+                    <h3>Redes</h3>
+                    <nav class="redes">
+                        <a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+                    </nav>
+                </article>
+            </div>
+    </section>
     </body>
 </html>

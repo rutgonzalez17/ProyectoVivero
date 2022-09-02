@@ -1,0 +1,21 @@
+#logearse {
+  padding: 50px 0;
+}
+#logearse h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+#logearse p {
+  text-align: center;
+  padding-bottom: 60px;
+}
+#logearse .formulario {
+  padding: 60px;
+  width: 50%;
+  margin: 0 auto;
+}
+#logearse .formulario h4 {
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=contacto.css.map */

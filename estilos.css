@@ -1,6 +1,7 @@
 /*ASI COMENTO EN ESTILOS*/
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 *{
     margin: 0%;
@@ -9,44 +10,168 @@
 }
 
 /*----------------------------------INDEX--------------------------------------------*/
-.menu{
-    background: rgb(172, 240, 172);
-    padding: 30px;
-}
+header{
 
-nav img{
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
-}
-ul li{
-    width: 120px;
-    height: 30px;
-    padding: 25px 10px;
-    background-color: rgb(18, 91, 18);
-    border: 2px  solid white;
+    background-color: rgba(0, 0, 0, 0.404);
+
 }
 
-.flexbox-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.container{
+
+    width: 1280px;
+    margin: auto;
+
+}
+
+.nav_checkbox{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-}
-ul li a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-}
-header ul{
-    list-style-type: none;
-}
-.bar-btn{
-    font-size: 25px;
-    color: white;
-    margin-right: 20px;
-    cursor: pointer;
+    padding: 10px 0px;
+
 }
 
+.logo{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.tab-nav{
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: none;
+    color: white;
+
+}
+
+.burger{
+
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+
+.content_nav{
+
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content_nav li{
+
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.content_nav li a::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+
+    transform: scale(1, 1);
+
+}
+
+.content_section{
+
+    height: 120vh;
+    background-image: url(imagenes/vivero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+@media screen and (max-width: 1280px){
+
+    .container{
+
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 770px){
+
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+
+        padding: 15px 0px;
+
+    }
+}
 
 /*-----NOSOTROS-------------------*/
 
@@ -75,11 +200,11 @@ section h1{
 }
 
 section img{
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
     padding: 10px 10px;
 }
-.gradiente{
+/*.gradiente{
     background-image: linear-gradient(rgb(134, 227, 134), white);
 }
 
@@ -99,7 +224,8 @@ section img{
 }
 /*----------------------------------TIENDA----------------------------------------------------------*/
 .productos{
-    margin: 25px 12px;
+    margin: 70px 12px;
+    font-family: 'Bebas Neue', cursive;
 }
 /*menu tienda*/
 span{
@@ -131,7 +257,7 @@ span{
 
 .image{
     display: block;
-    width: 100%;
+    width: 50%;
 }
 .overlay{
     position: absolute;
@@ -139,7 +265,7 @@ span{
     left: 0;
     bottom: 0;
     height: 100%;
-    width: 100%;
+    width: 50%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(255, 255, 255, 0.9);
@@ -159,7 +285,7 @@ span{
     opacity: 1;
 }
 /*----------------------------------------CONTACTO-------------------------------------*/
-form{
+/*form{
     width: 500px;
     margin: auto;
     padding: 10 px 30px;
@@ -189,25 +315,113 @@ label{
     background: #50CA41;
     color: white;
     padding: 20px;
+}*/
+
+/*--------------------------------------SERVICIOS------------------*/
+
+
+
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
 }
-/*-------------------------------------FOOTER--------------------------------------------*/
-/*.grid-footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5px;
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
 }
-.uno{
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: rgb(134, 227, 134);
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
 }
 
-ol li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}*/
+/*-------------------------------------FOOTER--------------------------------------------*/
 
 .footer{
     background: rgb(12, 12, 12);
+}
+.productos-footer li a{
+    color: white;
+    text-decoration: none;
+
+}
+h3{
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.texto_footer{
+    padding: 25px;
+    margin: 25px;
+}
+.redes a i{
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+.redes a{
+    text-decoration: none;
+    color: white;
 }
