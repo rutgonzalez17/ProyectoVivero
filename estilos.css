@@ -19,21 +19,18 @@ header{
     background-color: rgba(0, 0, 0, 0.404);
 
 }
-
 .container{
 
     width: 1280px;
     margin: auto;
 
 }
-
 .nav_checkbox{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 10px 0px;
-
 }
 
 .logo{
@@ -41,58 +38,44 @@ header{
     text-decoration: none;
     color: white;
     padding-left: 10px;
-
 }
 
 .tab-nav{
-
     outline: none;
     display: none;
-
 }
 
 .label{
-
     display: none;
     color: white;
-
 }
 
 .burger{
-
     width: 35px;
     height: 5px;
     background-color: white;
     margin-top: 5px;
-
 }
 
 .content_nav{
-
     grid-column: 3;
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .content_nav li{
-
     display: inline-block;
     padding-right: 10px;
-
 }
 
 .content_nav li a{
-
     text-decoration: none;
     color: white;
     position: relative;
-
 }
 
 .content_nav li a::after{
-
     content: '';
     display: block;
     height: 2px;
@@ -103,53 +86,27 @@ header{
     transform-origin: right;
     transform: scale(0, 1);
     transition: transform ease-in-out 0.5s;
-
 }
 
 .content_nav li a:hover::after{
-
     transform: scale(1, 1);
-
-}
-
-.content_section{
-
-    height: 120vh;
-    background-image: url(imagenes/vivero1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-
-
 }
 
 @media screen and (max-width: 1280px){
-
     .container{
-
         width: 100%;
-
     }
-
 }
 
 @media screen and (max-width: 770px){
-
     .label{
-
         display: grid;
         cursor: pointer;
         grid-column: 3;
         padding-right: 10px;
-
     }
 
     .content_nav{
-
         display: grid;
         grid-template-columns: 1fr;
         grid-column: 1/4;
@@ -157,77 +114,80 @@ header{
         max-height: 0;
         overflow: hidden;
         transition: all ease-in-out 0.6s;
-
     }
-
     .nav_checkbox input:checked ~ .content_nav{
-
         max-height: 500px;
-
     }
-
     .content_nav li{
-
         padding: 15px 0px;
-
     }
 }
 
 /*-----NOSOTROS-------------------*/
-
-.fondo_nosotros{
-    /*background: rgb(134, 227, 134);*/
-    margin: 20px 12px;
-    padding: 25px;
-}
-
-section p {
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-section h1{
-    text-align: center;
+section h2{
+	color: black;
     font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+    padding: 20px;
+    text-align: center;
 }
-.contenido_nosotros{
+.nosotros{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border: 3px solid black;
 }
 
-section img{
+.box img{
     width: 100%;
     height: 100%;
-    padding: 10px 10px;
 }
-/*.gradiente{
-    background-image: linear-gradient(rgb(134, 227, 134), white);
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: scale(0);
+    transition: .3s ease;
 }
 
-.animacion_fotos{
-    animation-name: fotos;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
+.box:hover .hover{
+    transform: scale(1);
 }
 
-@keyframes fotos {
-    from{
-        transform: translateX(1000px) scale(2, 2);
+@media only screen and (max-width: 700px){
+    .box img{
+        width: 60%;
+        margin: 10px 0;
     }
-    to{
-        transform: translateX(0);
+}
+@media only screen and (max-width: 500px){
+    .box img{
+        width: 100%;
     }
 }
 /*----------------------------------TIENDA----------------------------------------------------------*/
 .productos{
-    margin: 70px 12px;
+    margin: 60px 12px;
     font-family: 'Bebas Neue', cursive;
 }
-/*menu tienda*/
+
 span{
     /*width: 100%;
     height: 100%;*/
@@ -236,7 +196,7 @@ span{
     border-radius:  10px;
     color: black;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
 }
 .menu-tienda{
     padding: 20px;
@@ -252,7 +212,6 @@ span{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .image{
@@ -284,38 +243,7 @@ span{
 .img-container:hover .overlay{
     opacity: 1;
 }
-/*----------------------------------------CONTACTO-------------------------------------*/
-/*form{
-    width: 500px;
-    margin: auto;
-    padding: 10 px 30px;
-    margin-top: 20px;
-    border-radius: 7px;
-    background: rgb(189, 243, 221);
-    box-sizing: border-box;
-}
-input{
-    width: 100%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    color: black;
-    border: 3px solid black;
-    padding: 5px;
-    font-size: 15px;
-}
-textarea{
-    margin: 12px;
-    border: 3px solid black;
-}
 
-label{
-    margin: 3px;
-}
-.enviar{
-    background: #50CA41;
-    color: white;
-    padding: 20px;
-}*/
 
 /*--------------------------------------SERVICIOS------------------*/
 
@@ -396,14 +324,16 @@ label{
 	}
 }
 
-/*-------------------------------------FOOTER--------------------------------------------*/
+/*-------------------------------------FOOTER-----------------------------------------------------------------------------*/
 
 .footer{
     background: rgb(12, 12, 12);
 }
 .productos-footer li a{
     color: white;
+    list-style: none;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
 
 }
 h3{
@@ -422,6 +352,104 @@ h3{
     margin: 0 10px;
 }
 .redes a{
-    text-decoration: none;
+    list-style: none;
     color: white;
+}
+
+/*-------------------------------FORMULARIO-----------------------------*/
+.estilos{
+    color: black;
+    line-height: 1.6;
+    padding: 0 1.5em;
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(imagenes/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em;
+
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid white;
+    background: white;
+}
+.contenido-comentarios{
+    padding: 2em;
+}
+.forma-comentarios{
+    background: #B7E49F;
+}
+
+.forma-comentarios form{
+    margin: 0;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.forma-comentarios form .block {
+    grid-column: 1 / 3;
+}
+
+.forma-comentarios form button,
+.forma-comentarios form input,
+.forma-comentarios form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    border-bottom: 1px solid white;
+}
+.forma-comentarios form button{
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    background: white;
+}
+/*info*/
+.contacto-info{
+    background: rgb(227, 239, 227) ;
+}
+
+.contacto-info h4, .contacto-info ul, .contacto-info p {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+
+.contacto-info ul{
+    list-style: none;
+    padding: 0;
+}
+.contacto-info ul li{
+    padding: .3em;
+}
+
+
+/* @media */
+@media(min-width: 700px) {
+    .estilos {
+        padding: 0 4em;
+    }
+    .contenido-comentarios{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contenido-comentarios > * {
+        padding: 2em;
+    }
+    .contacto-info h4,
+    .contacto-info ul,
+    .contacto-info p {
+        text-align: left;
+    }
 }

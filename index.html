@@ -9,6 +9,7 @@
     </head>
     <body>
         <script src="bootstrap/js/bootstrap.js"></script>
+<!----------------------------------------HEADER------------------------------------------------------------------->
         <header>
             <div class="container">
                 <nav class="nav_checkbox">
@@ -24,85 +25,90 @@
                         <li><a href="#nosotros">NOSOTROS</a></li>
                         <li><a href="tienda.html">TIENDA</a></li>
                         <li><a href="#Servicios">SERVICIOS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="formulario.html">CONTACTO</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="content_section">
-    
+        <section>
+            <img src="imagenes/vivero1.jpg" alt="" width="100%">
         </section>
         <main>
-            <section class="gradiente">
-                <article class="fondo_nosotros">
-                    <h1  id="nosotros">NOSOTROS</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eos ex ullam cupiditate ipsa voluptates quam, 
-                    uibusdam recusandae dicta voluptate assumenda suscipit modi vel. Nam placeat at odio molestiae 
-                    suscipit?</p>
-                </article>
-            </section>
-            <section class="container">
-                <div class="row">
-                    <article class="col">
-                        <img src="imagenes/vivero2.jpg" alt="">
-                    </article>
-                    <article class="col">
-                        <img src="imagenes/vivero 3.jpg" alt="">
-                    </article>
-                    <article class="col">
-                        <img src="imagenes/vivero4.jpg" alt="">
-                    </article>
+<!----------------------------------------------------------NOSOTROS------------------------------------------------------------------------->
+           <section>
+                <h2>NOSOTROS</h2>
+           </section>
+            <div class="nosotros">
+                <div id="nosotros"class="box">
+                    <img src="imagenes/vivero2.jpg" alt="" width="300" height="200">
+                    <div class="hover">
+                        <h3>¿Quiene somos?</h3>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <div class="title-cards">
-            <h2 id="Servicios">Nuestros Servicios</h2>
-        </div>
-    <div class="container-card">
-    <div class="card">
-        <figure>
-            <img src="imagenes/paisajismo.webp">
-        </figure>
-        <div class="contenido-card">
-            <h3>Paisajismo y Diseño</h3>
-            <p>Diseñamos y realizamor todo tipo de espacio verde con la capacidad técnica y de ejecución en todas las áreas requeridas.</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="imagenes/huerta.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Huertas</h3>
-            <p>Realizamos huertas acorde a los espacios y posibilidades que brinda el lugar. Acompañamos su cuidado</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="imagenes/matenimiento.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Mantenimiento</h3>
-            <p>Realizamos servicios personalizamos para mantener el jardin de tus sueños</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    </div>
-        <!--FOOTER----------------------------------------------->
-        <section class="footer" class="container">
+                <div class="box">
+                    <img src="imagenes/vivero3.jpg" alt="" width="300" height="200">
+                    <div class="hover">
+                        <h3>¿Qué hacemos?</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="imagenes/vivero4.jpg" alt="" width="300" height="200">
+                    <div class="hover">
+                        <h3>¿Por qué lo hacemos?</h3>
+                    </div>
+                </div>
+            </div>
+<!------------------------------------------------------------------------SERVICIOS------------------------------------------------------>
+            <div class="title-cards">
+                <h2 id="Servicios">Nuestros Servicios</h2>
+            </div>
+            <div class="container-card">
+                <div class="card">
+                    <figure>
+                        <img src="imagenes/paisajismo.webp">
+                    </figure>
+                    <div class="contenido-card">
+                        <h3>Paisajismo y Diseño</h3>
+                        <p>Diseñamos y realizamor todo tipo de espacio verde con la capacidad técnica y de ejecución en todas las áreas requeridas.</p>
+                        <a href="#">Leer Màs</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="imagenes/huerta.jpg">
+                    </figure>
+                    <div class="contenido-card">
+                        <h3>Huertas</h3>
+                        <p>Realizamos huertas acorde a los espacios y posibilidades que brinda el lugar. Acompañamos su cuidado</p>
+                        <a href="#">Leer Màs</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="imagenes/matenimiento.jpg">
+                    </figure>
+                    <div class="contenido-card">
+                        <h3>Mantenimiento</h3>
+                        <p>Realizamos servicios personalizamos para mantener el jardin de tus sueños</p>
+                        <a href="#">Leer Màs</a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------------------FOOTER----------------------------------------------->
+            <section class="footer" class="container">
                 <div class="row">
                     <article class="col">
                         <h3 class="texto_footer">VI-VERO</h3>
                     </article>
                     <article class="col">
                         <h3>Productos</h3>
-                        <ol class="productos-footer">
-                            <li><a href="tienda.html">Interior</a></li>
-                            <li><a href="tienda.html">Exterior</a></li>
-                            <li><a href="tienda.html">Temporada</a></li>
-                        </ol>
+                        <ul class="productos-footer">
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="#nosotros">NOSOTROS</a></li>
+                            <li><a href="tienda.html">TIENDA</a></li>
+                            <li><a href="#Servicios">SERVICIOS</a></li>
+                            <li><a href="formulario.html">CONTACTO</a></li>
+                        </ul>
                     </article>
                     <article class="col">
                         <h3>Redes</h3>
@@ -113,6 +119,7 @@
                         </nav>
                     </article>
                 </div>
-        </section>
+            </section>
+        </main>
     </body>
 </html>
